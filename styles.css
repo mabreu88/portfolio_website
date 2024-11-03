@@ -10,16 +10,15 @@ h2 {
 
 .flexbox {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
 }
 
 .flex_item {
-    width: 100px;
-    height: 200px;
-    background-color: aqua;
-
+    width: 20%;
+    height: auto;
+    margin: 10px;
+    text-align: center;    
 }
 
 form {
@@ -27,7 +26,7 @@ form {
     padding: 20px ;
     max-width: 80%;
     margin: auto;
-    margin-top: 10px;
+    
     
 }
 

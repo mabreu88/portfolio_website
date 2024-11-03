@@ -20,14 +20,22 @@
         </nav>
     </header>
     <section id="projects">
+        <!-- In this section you will find the projects.
+         It uses CSS tags: flexbox, flex_item, project and project_image.-->
         <div class="flexbox">
-            <div class="flex-item">
+            <div class="flex_item">
                 <h2>StoryMe</h2>
+                <img src="/assets/images/storyme.png" alt="Storyme welcome screen">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ac libero ultricies
                     fermentum. Nullam nec purus ac libero ultricies fermentum.</p>
             </div>
-            <div class="flex-item">
+            <div class="flex_item">
                 <h2>Portfolio Website</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ac libero ultricies
+                    fermentum. Nullam nec purus ac libero ultricies fermentum.</p>
+            </div>
+            <div class="flex_item">
+                <h2>e-Commerce</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ac libero ultricies
                     fermentum. Nullam nec purus ac libero ultricies fermentum.</p>
             </div>
@@ -37,24 +45,26 @@
         <!-- In this section you will find the input forms for the contact,
          including name, email and the message itself.
          It uses CSS tags: label, form, textarea and contact_input.  -->
-        <form>
-            <h2>Contacto</h2>
-            <div class="contact_input">
-                <label for="name">Nombre</label>
-                <input type="text" placeholder="Jhon Doe" id="name">
-            </div>
-            <div class="contact_input">
-                <label for="email">Correo electronico</label>
-                <input type="email" placeholder="example@example.com" id="email">
-            </div>
-            <div class="contact_input">
-                <label for="message">Deja tu mensaje</label>
-                <textarea placeholder="Mensaje" rows="8" required id="message"></textarea>
-            </div>
-            <div class="contact_input">
-                <input type="submit" name="Enviar">
-            </div>
-        </form>
+        <div>
+            <form>
+                <h2>Contacto</h2>
+                <div class="contact_input">
+                    <label for="name">Nombre</label>
+                    <input type="text" placeholder="Jhon Doe" id="name">
+                </div> 
+                <div class="contact_input">
+                    <label for="email">Correo electronico</label>
+                    <input type="email" placeholder="example@example.com" id="email">
+                </div>
+                <div class="contact_input">
+                    <label for="message">Deja tu mensaje</label>
+                    <textarea placeholder="Mensaje" rows="8" required id="message"></textarea>
+                </div>
+                <div class="contact_input">
+                    <input type="submit" name="Enviar">
+                </div>
+            </form>
+        </div>
     </section>
     <footer>
         <p>MAB&lt;/&gt;Dev - 2024</p>
