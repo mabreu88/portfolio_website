@@ -1,1 +1,3 @@
-# portfolio_website
+# MAB</>Dev
+This website is based on The Holy Trinity of Frontend Development, HTML, CSS and Javascript, no framework was used. Because of its structure it can be used as in this case, as a presentation of my portfolio, to generate a web presence, as a landing page, etc...
+The code is documented in such a way that it is easy to understand what each section of the code does and what tags are used in CSS and JavaScript so that it can be easily modified for its use. There are also instructions on how to make a simple deployment to put it online. Feel free to make a fork of it and use it for whatever you like. Any contribution will be appreciated.
