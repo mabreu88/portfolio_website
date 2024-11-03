@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>MAB&lt;/&gt;Dev</title>
 </head>
+
 <body>
     <header>
         <h1>MAB&lt;/&gt;Dev</h1>
@@ -17,52 +19,40 @@
             </ul>
         </nav>
     </header>
-    <section>
-        <h2>Sobre mi</h2>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, a. Consectetur eum placeat similique quasi corporis doloribus. Voluptate veniam earum voluptatum aliquid maiores quasi ipsam doloribus, obcaecati, eveniet laboriosam beatae.</p>
-    </section>
-    <section>
-        <h2>Proyectos</h2>
-        <div class="project">
-            <img src="https://via.placeholder.com/150" alt="project1">
-            <h3>Proyecto 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-        </div>
-        <div class="project">
-            <img src="https://via.placeholder.com/150" alt="project2">
-            <h3>Proyecto 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-        </div>
-        <div class="project">
-            <img src="https://via.placeholder.com/150" alt="project3">
-            <h3>Proyecto 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
+    <section id="projects">
+        <div class="flexbox">
+            <div class="flex-item">
+                <h2>StoryMe</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ac libero ultricies
+                    fermentum. Nullam nec purus ac libero ultricies fermentum.</p>
+            </div>
+            <div class="flex-item">
+                <h2>Portfolio Website</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ac libero ultricies
+                    fermentum. Nullam nec purus ac libero ultricies fermentum.</p>
+            </div>
         </div>
     </section>
-    <section>
-        <h2>Teconologias</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat ex alias quis officiis eaque sunt consequatur neque fuga natus voluptate, iste sit dolor labore, architecto veniam velit. Ipsa, fugit ab?</p>
-    </section>
-    <section>        
+    <section id="contact">
         <!-- In this section you will find the input forms for the contact,
          including name, email and the message itself.
          It uses CSS tags: label, form, textarea and contact_input.  -->
         <form>
             <h2>Contacto</h2>
             <div class="contact_input">
-                <label>Nombre</label>
-                <input type="text" placeholder="Jhon Doe">
+                <label for="name">Nombre</label>
+                <input type="text" placeholder="Jhon Doe" id="name">
             </div>
             <div class="contact_input">
-                <label>Correo electronico</label>
-                <input type="email" placeholder="example@example.com ">
+                <label for="email">Correo electronico</label>
+                <input type="email" placeholder="example@example.com" id="email">
             </div>
             <div class="contact_input">
-                <label>Deja tu mensaje</label>
-                <textarea placeholder="Mensaje" rows="8" required></textarea>
+                <label for="message">Deja tu mensaje</label>
+                <textarea placeholder="Mensaje" rows="8" required id="message"></textarea>
             </div>
             <div class="contact_input">
-                <input type="submit" name="Enviar"> 
+                <input type="submit" name="Enviar">
             </div>
         </form>
     </section>
@@ -70,4 +60,5 @@
         <p>MAB&lt;/&gt;Dev - 2024</p>
     </footer>
 </body>
+
 </html>

@@ -8,6 +8,20 @@ h2 {
     margin: 0;
 }
 
+.flexbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.flex_item {
+    width: 100px;
+    height: 200px;
+    background-color: aqua;
+
+}
+
 form {
     background-color: transparent;
     padding: 20px ;
@@ -15,10 +29,6 @@ form {
     margin: auto;
     margin-top: 10px;
     
-}
-
-.contact_input {
-    padding:  6px 20px;
 }
 
 input, textarea {
@@ -32,6 +42,7 @@ input, textarea {
     background-color: transparent;
     color: #eee;
 }
+
 textarea {
     min-width: 100%;
     resize: none;
@@ -43,4 +54,8 @@ textarea {
 label {
     font-size: 0.9em;
     line-height: 2;
+}
+
+.contact_input {
+    padding:  6px 20px;
 }
