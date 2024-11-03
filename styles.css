@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    color: #eee;
+    background-color: rgb(43, 43, 46)}
+h2 {
+    text-align: center;
+    margin: 0;
+}
+
+form {
+    background-color: transparent;
+    padding: 20px ;
+    max-width: 80%;
+    margin: auto;
+    margin-top: 10px;
+    
+}
+
+.contact_input {
+    padding:  6px 20px;
+}
+
+input, textarea {
+    width: 100%;
+    box-sizing: border-box;
+    resize: none;
+    padding: 6px 12px;
+    border:  1px solid #eee;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px #0001;
+    background-color: transparent;
+    color: #eee;
+}
+textarea {
+    min-width: 100%;
+    resize: none;
+    min-height: 100px;
+    max-height: 160px;
+    font-family: sans-serif;
+}
+
+label {
+    font-size: 0.9em;
+    line-height: 2;
+}
