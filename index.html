@@ -4,71 +4,135 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="assets/images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
     <title>MAB&lt;/&gt;Dev</title>
 </head>
 
 <body>
-    <header>
-        <h1>MAB&lt;/&gt;Dev</h1>
-        <nav>
-            <ul>
-                <li>link1</li>
-                <li>link2</li>
-                <li>link3</li>
+    <header class="header">
+        <input type="checkbox" id="open-menu" class="header__checkbox">
+        <label for="open-menu" class="header__open-menu-button" role="button">=</label>
+        <div class="header__logo-container">
+            <img class="header__logo" src="assets/images/logo.png" alt="logo" role="banner">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__nav-list">
+                <li class="header__nav-item"><a href="#">About</a></li>
+                <li class="header__nav-item"><a href="#">Portfolio</a></li>
+                <li class="header__nav-item"><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section id="projects">
-        <!-- In this section you will find the projects.
-         It uses CSS tags: flexbox, flex_item, project and project_image.-->
-        <div class="flexbox">
-            <div class="flex_item">
-                <h2>StoryMe</h2>
-                <img src="/assets/images/storyme.png" alt="Storyme welcome screen">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ac libero ultricies
-                    fermentum. Nullam nec purus ac libero ultricies fermentum.</p>
+    <main class="profile">
+        <div class="profile__wrapper">
+            <div class="profile__image-container">
+                <img src="assets/images/profile.jpg" alt="profile photo" class="profile__img">
             </div>
-            <div class="flex_item">
-                <h2>Portfolio Website</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ac libero ultricies
-                    fermentum. Nullam nec purus ac libero ultricies fermentum.</p>
+            <div class="profile__data-container">
+                <div class="profile__data">
+                    <div class="profile__description">
+                        <h1>¿Quien es Martín Abreu?</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium porro beatae esse velit
+                            illo necessitatibus, atque explicabo. Expedita rerum natus officia blanditiis aliquam eum,
+                            eaque dolorum quis ratione dignissimos explicabo!</p>
+                    </div>
+                    <div class="profile__skill-container">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--60">60%</div>
+                                </div>
+                                <span class="profile__skill-name">CSS</span>
+                            </li>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--70">70%</div>
+                                </div>
+                                <span class="profile__skill-name">HTML</span>
+                            </li>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--60">60%</div>
+                                </div>
+                                <span class="profile__skill-name">Python</span>
+                            </li>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--50">50%</div>
+                                </div>
+                                <span class="profile__skill-name">JavaScript</span>
+                            </li>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--50">50%</div>
+                                </div>
+                                <span class="profile__skill-name">Flutter</span>
+                            </li>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--70">70%</div>
+                                </div>
+                                <span class="profile__skill-name">SQL</span>
+                            </li>
+                            <li class="profile__skill">
+                                <div class="load-bar">
+                                    <div class="load-bar__bar bar--40">40% Cursando</div>
+                                </div>
+                                <span class="profile__skill-name">Ciberseguridad</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="flex_item">
-                <h2>e-Commerce</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam nec purus ac libero ultricies
-                    fermentum. Nullam nec purus ac libero ultricies fermentum.</p>
+        </div>
+    </main>
+    <section class="portfolio">
+        <h2 class="portfolio__title">Portfolio</h2>
+        <div class="portfolio__project-container">
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">StoryMe1</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">StoryMe2</h2>
+            </div>
+
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">StoryMe5</h2>
+            </div>
+            <div class="portfolio__project">
+                <h2 class="portfolio__project-name">StoryMe6</h2>
             </div>
         </div>
     </section>
-    <section id="contact">
-        <!-- In this section you will find the input forms for the contact,
-         including name, email and the message itself.
-         It uses CSS tags: label, form, textarea and contact_input.  -->
-        <div>
-            <form>
-                <h2>Contacto</h2>
-                <div class="contact_input">
-                    <label for="name">Nombre</label>
-                    <input type="text" placeholder="Jhon Doe" id="name">
-                </div> 
-                <div class="contact_input">
-                    <label for="email">Correo electronico</label>
-                    <input type="email" placeholder="example@example.com" id="email">
-                </div>
-                <div class="contact_input">
-                    <label for="message">Deja tu mensaje</label>
-                    <textarea placeholder="Mensaje" rows="8" required id="message"></textarea>
-                </div>
-                <div class="contact_input">
-                    <input type="submit" name="Enviar">
-                </div>
-            </form>
-        </div>
+    <section class="form">
+        <h2 class="form__title">Contacto</h2>
+        <form class="form__form">
+            <div class="form__input-container">
+                <label for="Nombre">Nombre
+                    <input type=" text" placeholder="John DOe">
+                </label>
+                <label for="Nombre">Apellido
+                    <input type=" text" placeholder="John DOe">
+                </label>
+                <label for="Nombre">E-mail
+                    <input type=" email" placeholder="John DOe">
+                </label>
+                <label for="Nombre">Mensaje
+                    <textarea type=" text" placeholder="John DOe">
+                </label>
+            </div>
+        </form>
     </section>
-    <footer>
-        <p>MAB&lt;/&gt;Dev - 2024</p>
-    </footer>
 </body>
 
 </html>
