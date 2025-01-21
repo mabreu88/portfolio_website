@@ -4,135 +4,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="assets/images/favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="assets/images/favicon/favicon.svg" />
-    <link rel="shortcut icon" href="assets/images/favicon/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicon/apple-touch-icon.png" />
-    <link rel="stylesheet" href="styles.css">
+    <title>MAB&lt;/&gt;dev</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <title>MAB&lt;/&gt;Dev</title>
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-    <header class="header">
-        <input type="checkbox" id="open-menu" class="header__checkbox">
-        <label for="open-menu" class="header__open-menu-button" role="button">=</label>
-        <div class="header__logo-container">
-            <img class="header__logo" src="assets/images/logo.png" alt="logo" role="banner">
-        </div>
-        <nav class="header__nav">
-            <ul class="header__nav-list">
-                <li class="header__nav-item"><a href="#">About</a></li>
-                <li class="header__nav-item"><a href="#">Portfolio</a></li>
-                <li class="header__nav-item"><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+    <header>
+        <h1 class="title">MAB&lt;/&gt;dev <span>Web solutions</span></h1>
     </header>
-    <main class="profile">
-        <div class="profile__wrapper">
-            <div class="profile__image-container">
-                <img src="assets/images/profile.jpg" alt="profile photo" class="profile__img">
-            </div>
-            <div class="profile__data-container">
-                <div class="profile__data">
-                    <div class="profile__description">
-                        <h1>¿Quien es Martín Abreu?</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium porro beatae esse velit
-                            illo necessitatibus, atque explicabo. Expedita rerum natus officia blanditiis aliquam eum,
-                            eaque dolorum quis ratione dignissimos explicabo!</p>
-                    </div>
-                    <div class="profile__skill-container">
-                        <h2>Skills</h2>
-                        <ul>
-                            <li class="profile__skill">
-                                <div class="load-bar">
-                                    <div class="load-bar__bar bar--60">60%</div>
-                                </div>
-                                <span class="profile__skill-name">CSS</span>
-                            </li>
-                            <li class="profile__skill">
-                                <div class="load-bar">
-                                    <div class="load-bar__bar bar--70">70%</div>
-                                </div>
-                                <span class="profile__skill-name">HTML</span>
-                            </li>
-                            <li class="profile__skill">
-                                <div class="load-bar">
-                                    <div class="load-bar__bar bar--60">60%</div>
-                                </div>
-                                <span class="profile__skill-name">Python</span>
-                            </li>
-                            <li class="profile__skill">
-                                <div class="load-bar">
-                                    <div class="load-bar__bar bar--50">50%</div>
-                                </div>
-                                <span class="profile__skill-name">JavaScript</span>
-                            </li>
-                            <li class="profile__skill">
-                                <div class="load-bar">
-                                    <div class="load-bar__bar bar--50">50%</div>
-                                </div>
-                                <span class="profile__skill-name">Flutter</span>
-                            </li>
-                            <li class="profile__skill">
-                                <div class="load-bar">
-                                    <div class="load-bar__bar bar--70">70%</div>
-                                </div>
-                                <span class="profile__skill-name">SQL</span>
-                            </li>
-                            <li class="profile__skill">
-                                <div class="load-bar">
-                                    <div class="load-bar__bar bar--40">40% Cursando</div>
-                                </div>
-                                <span class="profile__skill-name">Ciberseguridad</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <section class="portfolio">
-        <h2 class="portfolio__title">Portfolio</h2>
-        <div class="portfolio__project-container">
-            <div class="portfolio__project">
-                <h2 class="portfolio__project-name">StoryMe1</h2>
-            </div>
-            <div class="portfolio__project">
-                <h2 class="portfolio__project-name">StoryMe2</h2>
-            </div>
+    <div class="nav-bg">
+        <nav class="main-nav container">
+            <a href="#">Inicio</a>
+            <a href="#">Nosotros</a>
+            <a href="#">Servicios</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </div>
 
-            <div class="portfolio__project">
-                <h2 class="portfolio__project-name">StoryMe5</h2>
-            </div>
-            <div class="portfolio__project">
-                <h2 class="portfolio__project-name">StoryMe6</h2>
-            </div>
-        </div>
+    <section>
+        <h2 class="title">Diseño y desarrollo web</h2>
+        <svg width="64px" height="64px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+            stroke="#223bb4">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier">
+                <path
+                    d="M5.7 15C4.03377 15.6353 3 16.5205 3 17.4997C3 19.4329 7.02944 21 12 21C16.9706 21 21 19.4329 21 17.4997C21 16.5205 19.9662 15.6353 18.3 15M12 9H12.01M18 9C18 13.0637 13.5 15 12 18C10.5 15 6 13.0637 6 9C6 5.68629 8.68629 3 12 3C15.3137 3 18 5.68629 18 9ZM13 9C13 9.55228 12.5523 10 12 10C11.4477 10 11 9.55228 11 9C11 8.44772 11.4477 8 12 8C12.5523 8 13 8.44772 13 9Z"
+                    stroke="#4169E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </svg>
+        <p>Montevideo, Uruguay</p>
+        <a href="#">Contactar</a>
     </section>
-    <section class="form">
-        <h2 class="form__title">Contacto</h2>
-        <form class="form__form">
-            <div class="form__input-container">
-                <label for="Nombre">Nombre
-                    <input type=" text" placeholder="John DOe">
-                </label>
-                <label for="Nombre">Apellido
-                    <input type=" text" placeholder="John DOe">
-                </label>
-                <label for="Nombre">E-mail
-                    <input type=" email" placeholder="John DOe">
-                </label>
-                <label for="Nombre">Mensaje
-                    <textarea type=" text" placeholder="John DOe">
-                </label>
-            </div>
-        </form>
-    </section>
+
+    <main>
+        <h2>Servicios</h2>
+        <section>
+            <h3>Diseño Web</h3>
+            <svg version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                viewBox="0 0 512 512" xml:space="preserve" width="64px" height="64px" fill="#000000">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <style type="text/css">
+                        .st0 {
+                            fill: #4169E1;
+                        }
+                    </style>
+                    <g>
+                        <path class="st0"
+                            d="M464,0H48C21.492,0,0,21.492,0,48v416c0,26.508,21.492,48,48,48h416c26.508,0,48-21.492,48-48V48 C512,21.492,490.508,0,464,0z M444.664,35c10.492,0,19,8.508,19,19s-8.508,19-19,19c-10.492,0-19-8.508-19-19 S434.172,35,444.664,35z M374.164,35c10.492,0,19,8.508,19,19s-8.508,19-19,19c-10.492,0-19-8.508-19-19S363.672,35,374.164,35z M303.664,35c10.492,0,19,8.508,19,19s-8.508,19-19,19c-10.492,0-19-8.508-19-19S293.172,35,303.664,35z M472,464 c0,4.406-3.586,8-8,8H48c-4.414,0-8-3.594-8-8V104h432V464z">
+                        </path>
+                        <rect x="96" y="192" class="st0" width="152" height="32"></rect>
+                        <rect x="96" y="352" class="st0" width="328" height="32"></rect>
+                        <rect x="304" y="192" class="st0" width="120" height="120"></rect>
+                        <polygon class="st0" points="229.042,304 248,304 248,272 96,272 96,304 213.042,304 "></polygon>
+                    </g>
+                </g>
+            </svg>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptas fugit explicabo voluptatum
+                voluptatem, voluptates obcaecati nostrum magnam quasi exercitationem, delectus expedita vel. Suscipit ab
+                nam
+                at
+                magnam, vero voluptatibus.</p>
+        </section>
+        <section>
+            <h3>Aplicaionnes Moviles</h3>
+            <svg fill="#4169E1" width="64px" height="64px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <path
+                        d="M27.5,12A2.5,2.5,0,0,0,25,14.5V13a1,1,0,0,0-1-1H8a1,1,0,0,0-1,1v1.5a2.5,2.5,0,0,0-5,0v6a2.5,2.5,0,0,0,5,0V24a1,1,0,0,0,1,1h2v4.5a2.5,2.5,0,0,0,5,0V25h2v4.5a2.5,2.5,0,0,0,5,0V25h2a1,1,0,0,0,1-1V20.5a2.5,2.5,0,0,0,5,0v-6A2.5,2.5,0,0,0,27.5,12ZM5,20.5a.5.5,0,0,1-1,0v-6a.5.5,0,0,1,1,0Zm8,9a.5.5,0,0,1-1,0V25h1Zm6.5.5a.51.51,0,0,1-.5-.5V25h1v4.5A.51.51,0,0,1,19.5,30ZM23,23H9V14H23Zm5-2.5a.5.5,0,0,1-1,0v-6a.5.5,0,0,1,1,0Z">
+                    </path>
+                    <path
+                        d="M7.08,9.88a1,1,0,0,0,.24.78,1,1,0,0,0,.75.34H23.93a1,1,0,0,0,.75-.34,1,1,0,0,0,.24-.78A9,9,0,0,0,21.65,4l2.18-2.18A1,1,0,0,0,22.42.42L19.93,2.91A9,9,0,0,0,16,2a8.87,8.87,0,0,0-4.42,1.18L8.82.42A1,1,0,0,0,7.4.42a1,1,0,0,0,0,1.41L9.94,4.37A8.94,8.94,0,0,0,7.08,9.88ZM22.7,9H9.3A7,7,0,0,1,22.7,9Z">
+                    </path>
+                </g>
+            </svg>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptas fugit explicabo voluptatum
+                voluptatem, voluptates obcaecati nostrum magnam quasi exercitationem, delectus expedita vel. Suscipit ab
+                nam
+                at
+                magnam, vero voluptatibus.</p>
+        </section>
+        <section>
+            <h3>e-Commerce</h3>
+            <svg fill="#4169E1" width="64px" height="64px" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"
+                stroke="#4169E1" stroke-width="1.408">
+                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                <g id="SVGRepo_iconCarrier">
+                    <g data-name="40 shopping online" id="_40_shopping_online">
+                        <path d="M54.41,45.24a1.02,1.02,0,1,1-1.02-1.02A1.024,1.024,0,0,1,54.41,45.24Z"></path>
+                        <path d="M50.33,45.24a1.015,1.015,0,1,1-1.02-1.02A1.018,1.018,0,0,1,50.33,45.24Z"></path>
+                        <path
+                            d="M58.5,40.68H55.41V17.19a3.009,3.009,0,0,0-3-3H11.59a3.009,3.009,0,0,0-3,3V40.68H5.5a2,2,0,0,0-2,2v1.13a6.011,6.011,0,0,0,6,6h45a6.011,6.011,0,0,0,6-6V42.68A2,2,0,0,0,58.5,40.68ZM10.59,17.19a1,1,0,0,1,1-1H52.41a1,1,0,0,1,1,1V40.68H10.59ZM38.53,42.68l-1.04,2.07H26.51l-1.04-2.07ZM58.5,43.81a4.005,4.005,0,0,1-4,4H9.5a4.005,4.005,0,0,1-4-4V42.68H23.23l1.76,3.52a1,1,0,0,0,.9.55H38.11a1,1,0,0,0,.9-.55l1.76-3.52H58.5Z">
+                        </path>
+                        <path
+                            d="M43.2,26.42H40.16l-4.84-7.25a1,1,0,1,0-1.66,1.11l4.09,6.14H26.25l4.09-6.14a1,1,0,1,0-1.66-1.11l-4.84,7.25H20.8a1,1,0,1,0,0,2h.78l1.3,7.42a3.2,3.2,0,0,0,3.07,2.76h12.1a3.2,3.2,0,0,0,3.07-2.76l1.3-7.42h.78a1,1,0,0,0,0-2ZM39.15,35.5a1.212,1.212,0,0,1-1.1,1.1H25.95a1.212,1.212,0,0,1-1.1-1.1l-1.24-7.08H40.39Z">
+                        </path>
+                        <path d="M32,35.546a1,1,0,0,0,1-1V30.473a1,1,0,0,0-2,0v4.073A1,1,0,0,0,32,35.546Z"></path>
+                        <path d="M27.926,35.546a1,1,0,0,0,1-1V30.473a1,1,0,0,0-2,0v4.073A1,1,0,0,0,27.926,35.546Z">
+                        </path>
+                        <path d="M36.074,35.546a1,1,0,0,0,1-1V30.473a1,1,0,0,0-2,0v4.073A1,1,0,0,0,36.074,35.546Z">
+                        </path>
+                    </g>
+                </g>
+            </svg>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto voluptas fugit explicabo voluptatum
+                voluptatem, voluptates obcaecati nostrum magnam quasi exercitationem, delectus expedita vel. Suscipit ab
+                nam
+                at
+                magnam, vero voluptatibus.</p>
+        </section>
+        <section>
+            <h2>Contacto</h2>
+            <form>
+                <fieldset>
+                    <legend>Envianos un mensaje</legend>
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                    </div>
+                    <div>
+                        <label for="telefono">Telefono</label>
+                        <input type="number" id="telefono" name="telefono" placeholder="Telefono" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                    <div>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="mensaje" placeholder="Deja tu mensaje" cols="30" rows="10"
+                            required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Enviar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos los derechos reservados MAB&lt;/&gt;dev 2025</p>
+    </footer>
 </body>
 
 </html>

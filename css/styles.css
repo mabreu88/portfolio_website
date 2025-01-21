@@ -1,0 +1,50 @@
+:root{
+    --primary: #0A2540;
+    --secondary: #F5F5F5;
+    --tertiary: #1E90FF;
+    --quaternary: #32CD32;
+    --quinary: #333333;
+}
+html {
+    font-size: 62.5%; /*1rem = 10px*/
+}
+body {
+    font-size: 16px; /*1rem = 10px*/
+    font-family: Montserrat;
+    background-color: var(--secondary);
+}
+.title {
+    text-align: center;
+    font-size: 4rem;    
+    font-weight: 700;
+}
+.title span {
+    color: var(--tertiary);
+    font-size: 2rem;
+}
+header {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+.container {
+    width: 90rem;   
+    margin: 0 auto;
+}
+.nav-bg {
+    background-color: var(--primary);
+}
+.menu {
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.menu a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.menu a:hover {
+    color: var(--quaternary);
+}
