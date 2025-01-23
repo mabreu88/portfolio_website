@@ -27,7 +27,7 @@ header {
     color: var(--primary);
 }
 .container {
-    width: 90rem;   
+    max-width: 110rem;   
     margin: 0 auto;
 }
 .nav-bg {
@@ -38,6 +38,19 @@ header {
     display: flex;
     justify-content: space-between;
 }
+
+@media  (max-width: 768px) {
+   .menu {
+    flex-direction: column;
+   }
+}
+
+@media  (max-width: 768px) {
+    .menu {
+     flex-direction: column;
+    }
+ }
+
 .menu a {
     color: var(--secondary);
     text-decoration: none;
@@ -48,3 +61,6 @@ header {
 .menu a:hover {
     color: var(--quaternary);
 }
+
+
+
