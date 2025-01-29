@@ -15,21 +15,14 @@ html {
     font-size: 62.5%;
     box-sizing: border-box;
     /*1rem = 10px*/
-    scroll-snap-type: y mandatory;
 }
 
 /*=== Scroll snap ===*/
 
-.title, .services,
-.nav-bg,
-.contact-input {
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
-}
 
 header {
-    background-color: var(--secondary);
-    color: var(--primary);
+    display: flex;
+    justify-content: center;
 }
 
 /*=== Scroll Snap ===*/
@@ -45,6 +38,14 @@ body {
     /*1rem = 10px*/
     font-family: Montserrat;
     background-color: var(--secondary);
+}
+
+@media  (max-width: 768px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+   
 }
 
 .container {
@@ -132,18 +133,57 @@ h3 {
 
 /*=== Title ===*/
 
-.title span {
-    color: var(--tertiary);
-    font-size: 2rem;
+.logo {
+    max-width: 100%;
+    min-width: 20%;
 }
 
-@media (min-width: 768px) {
-    .title {
-        font-size: 3rem;
-    }
-}
+
 
 /*=== Navigation ===*/
+
+.open-menu,
+.menu__open-nav-button {
+    display: none;
+}
+
+@media  (max-width: 768px) {
+    .menu__open-nav-button {
+        display: block;
+        font-size: 3rem;
+        color: var(--secondary);
+        right: 2rem;
+        position: absolute;
+        z-index: 2;
+    }
+
+    .menu-nav {
+        display: none;
+        background-color: var(--primary);
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        top: 20;
+        z-index: 1;
+        margin: 0;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        height: 40vh;
+        margin: auto;
+        justify-content: space-evenly;
+    
+    }
+   
+}
+
+.open-menu:checked ~ .menu-nav {
+    display: block;
+}
+
+
 .nav-bg {
     background-color: var(--primary);
     border-bottom: 1px solid var(--quaternary);
@@ -179,11 +219,20 @@ h3 {
 
 .hero {
     background-image: url(../assets/images/hero.jpg);
-    background-repeat: none;
+    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    height: 410px;
+    height: 41rem;
     position: relative;
     margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        background-size: cover;  
+        background-position: center;
+        height: 30rem;
+    }
 }
 
 .hero-content {
@@ -267,6 +316,10 @@ h3 {
     font-weight: bold;
     margin-bottom: 2rem;
     color: var(--tertiary);
+}
+
+textarea {
+    resize: none;
 }
 
 @media (min-width: 768px) {

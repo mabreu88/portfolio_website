@@ -13,20 +13,25 @@
         rel="stylesheet">
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/images/favicon/favicon.svg" type="image/x-icon">
     <script> src = "script.js"</script>
 </head>
 
 <body>
-    <header>
-        <h1 class="title">MAB&lt;/&gt;dev <span>Web solutions</span></h1>
+    <header class="header" id="header">
+        <img src="assets/images/logo.png" alt="logo" class="logo">
     </header>
     <div class="nav-bg">
-        <nav class="menu container">
-            <a href="#">Inicio</a>
-            <a href="#">Nosotros</a>
-            <a href="#">Servicios</a>
-            <a href="#">Contacto</a>
-        </nav>
+        <input type="checkbox" id="open-menu" class="open-menu">
+        <label for="open-menu" class="menu__open-nav-button">☰</label>
+        <div class="menu-nav">
+            <nav class="menu container">
+                <a class="menu-item" href="#header">Inicio</a>
+                <a class="menu-item" href="#services">Servicios</a>
+                <a class="menu-item" href="#about">Nosotros</a>
+                <a class="menu-item" href="#contact">Contacto</a>
+            </nav>
+        </div>
     </div>
 
     <section class="hero">
@@ -48,11 +53,12 @@
                     </g>
                 </svg>
                 Montevideo, Uruguay</p>
-            <a class="button" href="#">Contactar</a>
+            <a class="button" href="#contact">Contactar</a>
         </div>
     </section>
     <main class="container shadow">
-        <h2>Servicios</h2>
+
+        <h2 id="services">Servicios</h2>
         <div class="services">
             <section class="service">
                 <h3>Diseño Web</h3>
@@ -163,29 +169,39 @@
                     magnam, vero voluptatibus.</p>
             </section>
         </div>
-
-
+        <div>
+            <section class="about" id="about">
+                <h2>Sobre Nosotros</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae minima odio consequatur et
+                    laborum facilis, provident magni porro, deserunt architecto qui nobis beatae sunt laboriosam, ipsum
+                    optio. Aliquid, voluptate animi.</p>
+            </section>
+        </div>
         <section>
-            <h2 class="contact">Contacto</h2>
+            <h2 class="contact" id="contact">Contacto</h2>
             <form class="contact-form">
                 <fieldset>
                     <legend>Envianos un mensaje</legend>
                     <div class="contact-input">
                         <div class="input">
                             <label for="nombre">Nombre</label>
-                            <input class="input-field" type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                            <input class="input-field" type="text" id="nombre" name="nombre" placeholder="Nombre"
+                                required>
                         </div>
                         <div class="input">
                             <label for="telefono">Telefono</label>
-                            <input class="input-field" type="number" id="telefono" name="telefono" placeholder="Telefono" required>
+                            <input class="input-field" type="tel" id="telefono" name="telefono"
+                                placeholder="Telefono" required>
                         </div>
                         <div class="input">
                             <label for="email">Email</label>
-                            <input class="input-field" type="email" id="email" name="email" placeholder="Email" required>
+                            <input class="input-field" type="email" id="email" name="email" placeholder="Email"
+                                required>
                         </div>
                         <div class="input">
                             <label for="mensaje">Mensaje</label>
-                            <textarea class="input-field" name="mensaje" id="mensaje" placeholder="Deja tu mensaje" required></textarea>
+                            <textarea class="input-field" name="mensaje" id="mensaje" placeholder="Deja tu mensaje"
+                                required></textarea>
                         </div>
                     </div>
                     <div class="rigth-align flex">
